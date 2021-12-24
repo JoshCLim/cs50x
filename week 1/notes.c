@@ -51,6 +51,19 @@ scope (of a variable) = the lines of code where the variable is defined
 
 computers are limited by their ram / number of bits - thus, they cannot count infinitely high nor infinitely precisely
 
+
+
+
+8bits = 1byte
+
+
+
+to do floating point arithmetic, at least one of the inputs has to be a floating point number
+    e.g. int / int != float; the program will truncate the answer to an integer
+    needs to be at least one float in the inputs to avoid the program truncating the output
+
+
+void = nothing
 */
 
 
@@ -75,7 +88,7 @@ data types:
     double  (double)    64bits  a float with more digits
 
     DOES NOT EXIST IN C:
-        bool    (boolean)   64bits  true or false
+        bool    (boolean)   8bits  true or false
         structs (structures)
         typedefs
 
@@ -186,8 +199,9 @@ terminal commands for UNIX-based systems (Linux and MacOS):
 
 
 
-
-
+#include <stdio.h> // header file - include standard input output header file
+int main(void)
+{
 
 // code samples
 
@@ -257,7 +271,9 @@ do // do-while statement - a normal while loop checks condition and then runs co
 while (booleanExpression);
 
 
-for (initializeVariable; booleanExpression; increment) // for loop
+for (initializeVariables; booleanExpression; increment) // for loop
+// you can initialise as many variables as you want and increment as many variables as you want
+// you can also have any boolean expression 
 {
     // do stuff
 }
@@ -280,7 +296,7 @@ int getNumber(void) // function that returns integer
     return n;
 }
 
-
+}
 
 
 
