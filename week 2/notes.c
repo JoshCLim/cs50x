@@ -1,5 +1,20 @@
 /*
 
+SUMMARY
+
+    under-the-hood of compiling the
+
+    debugging
+
+    memory, RAM
+
+    arrays
+
+    command line arguments
+
+
+
+
 -----     Week 2 Lecture     -----     
 
 in CS50 IDE

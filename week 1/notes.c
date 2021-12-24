@@ -1,5 +1,23 @@
 /*
 
+SUMMARY
+
+    intro to C
+
+    data types
+    operators
+
+    functions
+    conditionals
+    loops
+
+    compiling
+
+    terminal commands
+
+
+
+
 -----     Week 1 Lecture     -----
 
 Three aspects of code:
