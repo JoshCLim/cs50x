@@ -164,7 +164,7 @@ function in string.h
 
 
 STRUCTURES:
-    you can essentially create your own data type (like an object / dictionary / class)
+    you can essentially create your own data type (like an object / dictionary / class idk)
 
     code:    
         typedef struct
@@ -184,11 +184,11 @@ STRUCTURES:
 //#include <stdio.h>
 
 
-// creating a datatype called person, with two "fields": name and number
 
 
 int main(void) 
 {
+    // creating a datatype called person, with two "fields": name and number
     typedef struct
     {
         string name;
