@@ -184,7 +184,7 @@ STRUCTURES:
 //#include <stdio.h>
 
 
-
+typedef char *string;
 
 int main(void) 
 {
@@ -215,9 +215,9 @@ int main(void)
 /*
 
 REAL TIMES
-                    reversed5000.txt            sorted5000.txt              reversed10000.txt       reversed50000.txt
-sort1     bubble    0.111s                      0.016s                      0.399s                  15.288s
-sort2               0.011s                      0.015s                      0.038s                  04.376s
-sort3               0.038s                      0.055s                      0.287s                  08.549s
+                        reversed5000.txt            sorted5000.txt              reversed10000.txt       reversed50000.txt
+sort1     bubble        0.111s                      0.016s                      0.399s                  15.288s
+sort2     merge         0.011s                      0.015s                      0.038s                  04.376s
+sort3     insertion     0.038s                      0.055s                      0.287s                  08.549s
 
 */

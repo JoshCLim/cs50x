@@ -215,104 +215,113 @@ terminal commands for UNIX-based systems (Linux and MacOS):
 
 
 
+typedef char *string;
 
-
-#include <stdio.h> // header file - include standard input output header file
+// #include <stdio.h> // header file - include standard input output header file
 int main(void)
 {
 
-// code samples
+    // code samples
 
 
-// ----- PRINT / OUTPUT STUFF -----
-printf("hello, world"); // prints hello world
+    // ----- PRINT / OUTPUT STUFF -----
 
-printf("%.10f\n", x / y); // prints x / y to 10 decimal places
+    int x = 1;
+    int y = 2;
 
+    printf("hello, world"); // prints hello world
 
-// ----- DECLARE / INITIALIZE VARIBLES -----
-int number; // declares variable "number"
-
-String message = "hello, world"; // assigns string to variable "message"
+    printf("%.10f\n", x / y); // prints x / y to 10 decimal places
 
 
+    // ----- DECLARE / INITIALIZE VARIBLES -----
+    int number; // declares variable "number"
 
-// ----- CONDITIONALS -----
-
-if (booleanExpression)  // if / else if / else block
-{
-    // do stuff
-}
-else if (booleanExpression || booleanExpression)
-{
-    // do other stuff
-}
-else 
-{
-    // error
-}
-
-int x = (booleanExpression) ? 5 : 6; // using a ternary operator (?:)
-    // if booleanExpression is true, x = 5, else, x = 6;
+    string message = "hello, world"; // assigns string to variable "message"
 
 
-int x = 0;
-switch (x) // switch statement
-{
-    case 1: // if x == 1
+
+    // ----- CONDITIONALS -----
+    int booleanExpression = 1;
+
+    if (booleanExpression)  // if / else if / else block
+    {
         // do stuff
-        break;
-    case 2: // if x == 2
+    }
+    else if (booleanExpression || booleanExpression)
+    {
+        // do other stuff
+    }
+    else 
+    {
+        // error
+    }
+
+    int x = (booleanExpression) ? 5 : 6; // using a ternary operator (?:)
+        // if booleanExpression is true, x = 5, else, x = 6;
+
+
+    int x = 0;
+    switch (x) // switch statement
+    {
+        case 1: // if x == 1
+            // do stuff
+            break;
+        case 2: // if x == 2
+            // do stuff
+            break;
+        default: // no cases above met
+            // do stuff
+            break;
+    }
+
+
+    // ----- LOOPS -----
+
+    while (1) // infinite while loop
+    {
         // do stuff
-        break;
-    default: // no cases above met
+    }
+    while (booleanExpression) // while loop
+    {
         // do stuff
-        break;
-}
+    }
+
+    do // do-while statement - a normal while loop checks condition and then runs code, do-while runs code then checks condition
+    {
+        // get input or something   
+    }
+    while (booleanExpression);
+
+    char *initializeVariables = "int i = 0";
+    char *booleanExpression = "i < length";
+    char *increment = "i++";
+    for (initializeVariables; booleanExpression; increment) // for loop
+    {
+        // do stuff
+    }
+    // you can initialise as many variables as you want and increment as many variables as you want
+    // you can also have any boolean expression 
 
 
-// ----- LOOPS -----
+    // ----- FUNCTIONS -----
 
-while (true) // infinite while loop
-{
-    // do stuff
-}
-while (booleanExpression) // while loop
-{
-    // do stuff
-}
+    int function0 (int a); // declare a function prototype (usually at top of document)
 
-do // do-while statement - a normal while loop checks condition and then runs code, do-while runs code then checks condition
-{
-    // get input or something   
-}
-while (booleanExpression);
+    void function1(void) // declare a function in C
+    {
+        printf("Hello, world!");// do something
+    }
+    void function2(int q) // declare a function with an input
+    {
+        // do something
+    }
+    int getNumber(void) // function that returns integer
+    {
+        int n = 1;
 
-
-for (initializeVariables; booleanExpression; increment) // for loop
-// you can initialise as many variables as you want and increment as many variables as you want
-// you can also have any boolean expression 
-{
-    // do stuff
-}
-
-
-// ----- FUNCTIONS -----
-
-void function1(void) // declare a function in C
-{
-    // do something
-}
-void function2(int q) // declare a function with an input
-{
-    // do something
-}
-int getNumber(void) // function that returns integer
-{
-    int n = 1;
-
-    return n;
-}
+        return n;
+    }
 
 }
 
@@ -321,10 +330,10 @@ int getNumber(void) // function that returns integer
 
 // programs
 
-/*
+
 
 // -----     print hello world     -----
-#include <stdio.h>
+//#include <stdio.h>
 int main(void)
 {
     printf("Hello World!");
@@ -332,8 +341,8 @@ int main(void)
 
 
 // -----     ask user for name input     -----
-#include <cs50.h>
-#include <stdio.h>
+//#include <cs50.h>
+//#include <stdio.h>
 
 int main(void)
 {
@@ -345,8 +354,8 @@ int main(void)
 
 
 // -----     divide two numbers     -----
-#include <cs50.h>
-#include <stdio.h>
+//#include <cs50.h>
+//#include <stdio.h>
 
 int main(void)
 {
@@ -357,4 +366,3 @@ int main(void)
     printf("%f\n", (float) x / (float) y); // note that x and y must be converted to floats first before the division
 }
 
-*/
