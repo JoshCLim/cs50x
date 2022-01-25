@@ -200,6 +200,9 @@ file I/O        taking input/output from files
     fprintf(<pointer to file>, <data to be printed (format string)>, <list of variables>)
         e.g. fprinf(file, "%s,%s\n", name, number);
 
+    fscanf(<pointer to file>, formatted data type (e.g. "%s"), variable to store word in);
+        returns EOF if reached end of file
+
     fread(<ptr>, <size>, <nmemb>, <stream>)
     fwrite(<ptr>, <size>, <nmemb>, <stream>)
             ptr     = pointer to memory to store read/write data
@@ -322,7 +325,7 @@ int main(void)
 
         // read all file characters one by one and print in terminal window
             char ch;
-            while ((ch = fgtc(file) != EOF)
+            while ((ch = fgtc(file)) != EOF) // EOF = end of file
             {
                 printf("%c", ch);
             }
